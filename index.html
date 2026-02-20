@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <h1>🎬 Movie Dashboard</h1>
+    <p>Projeto com HTML, CSS, JavaScript e API de Filmes</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Barra de Busca -->
+    <section class="search-section">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Buscar filmes (ex: Batman, Avengers...)"
+      />
+      <button id="searchBtn">Buscar</button>
+    </section>
+
+    <!-- Loader -->
+    <section id="loader" class="loader hidden">
+      <div class="spinner"></div>
+      <p>Buscando filmes...</p>
+    </section>
+
+    <!-- Resultados -->
+    <section id="moviesContainer" class="movies-grid"></section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido por você 🚀 | Projeto para Portfólio Front-End</p>
+  </footer>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

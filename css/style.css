@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #020617;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Busca */
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-section button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-section button:hover {
+  background: #0ea5e9;
+}
+
+/* Grid de filmes */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Card de filme */
+.movie-card {
+  background: #020617;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #334155;
+  border-top: 4px solid #38bdf8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #334155;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
