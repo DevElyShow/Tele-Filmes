@@ -2,7 +2,7 @@
 
 Uma aplicação web de dashboard de filmes desenvolvida com **HTML, CSS e JavaScript puro**, que consome uma API pública para buscar filmes em tempo real.
 
-🔗 **Deploy (Vercel):** https://movie-dashboard.vercel.app/
+🔗 **Deploy (Vercel):** https://moviedashboard-teal.vercel.app/
 📦 **Repositório:** https://github.com/DevElyShow/Movie-Dashboard
 
 ---
