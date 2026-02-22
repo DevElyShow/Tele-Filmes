@@ -1,4 +1,4 @@
-# 🎬 Movie Dashboard
+# 🎬 Tele Filmes
 
 Uma aplicação web de dashboard de filmes desenvolvida com **HTML, CSS e JavaScript puro**, que consome uma API pública para buscar filmes em tempo real.
 
