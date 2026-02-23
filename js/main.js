@@ -11,17 +11,20 @@ searchBtn.addEventListener("click", async () => {
     return;
   }
 
+try {
   showLoader();
   moviesContainer.innerHTML = "";
-
   const movies = await searchMovies(movieName);
-
-  hideLoader();
   renderMovies(movies);
+} catch (error) {
+  alert("Erro ao buscar filmes!");
+  console.error(error);
+} finally {
+  hideLoader();
 });
 
 // Buscar ao pressionar Enter
-searchInput.addEventListener("keypress", async (e) => {
+searchInput.addEventListener("keydown", async (e) => {
   if (e.key === "Enter") {
     searchBtn.click();
   }
