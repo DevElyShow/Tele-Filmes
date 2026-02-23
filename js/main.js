@@ -24,7 +24,7 @@ try {
 });
 
 // Buscar ao pressionar Enter
-searchInput.addEventListener("keydown", async (e) => {
+searchInput.addEventListener("keypress", async (e) => {
   if (e.key === "Enter") {
     searchBtn.click();
   }
