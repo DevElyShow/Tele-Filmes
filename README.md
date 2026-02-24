@@ -62,7 +62,7 @@ A API é responsável por fornecer os dados dos filmes com base na busca realiza
 ## 📂 Estrutura do Projeto
 
 ```bash
-Movie-Dashboard/
+Tele Filmes/
 │
 ├── index.html
 │
@@ -86,10 +86,10 @@ Movie-Dashboard/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/DevElyShow/Movie-Dashboard.git
+git clone https://github.com/DevElyShow/Tele_filmes.git
 
 # Acesse a pasta do projeto
-cd Movie-Dashboard
+cd Tele_filmes
 
 # Abra o projeto no VS Code
 code .
